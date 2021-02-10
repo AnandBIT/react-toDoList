@@ -14,6 +14,7 @@ function InputArea(props) {
 				props.onAdd(inputText);
 				setInputText("");
 				event.preventDefault();
+				document.querySelector("input").focus();
 			}}>
 			<input type="text" onChange={handleChange} autoFocus value={inputText} required />
 			<button>
