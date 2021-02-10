@@ -19,11 +19,14 @@ function App() {
 
 	return (
 		<div className="container">
-			<div className="heading">
-				<h1>To-Do List</h1>
+			<div className="top-part">
+				<div className="heading">
+					<h1>To-Do List</h1>
+				</div>
+				<InputArea onAdd={handleSubmit} />
 			</div>
-			<InputArea onAdd={handleSubmit} />
-			<div>
+			
+			<div className="list">
 				<ul>
 					{itemsArray.map((item, index) => (
 						<List key={index} id={index} content={item} onChecked={deleteItem} />
