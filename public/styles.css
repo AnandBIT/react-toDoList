@@ -187,7 +187,7 @@ li {
 
 @media only screen and (max-width: 600px) {
   .container {
-    margin-top: 10px;
     width: 90vw;
+    height: 85vh;
   }
 }
