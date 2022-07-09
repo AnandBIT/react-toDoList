@@ -20,15 +20,15 @@ function App() {
 	return (
 		<div className='container'>
 			<div className='top-part'>
-				<div className='heading'>
-					<h1>To-Do List</h1>
+				<div className='heading flex items-center justify-center mb-4 sm:mb-6'>
+					<h1 className='hover:text-[blue] font-bold'>To-Do List</h1>
 				</div>
 				<InputArea onAdd={handleSubmit} />
 			</div>
 
-			<div className='list'>
-				<ul>
-					{itemsArray.map(({ itemID, item }, index) => {
+			<div className='p-4 sm:p-2'>
+				<ul className='px-2 grid gap-4 sm:gap-2'>
+					{itemsArray.map(({ itemID, item }) => {
 						return (
 							<List
 								key={itemID}

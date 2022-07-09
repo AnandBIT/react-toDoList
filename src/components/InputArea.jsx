@@ -16,7 +16,7 @@ function InputArea({ onAdd }) {
 
 	return (
 		<form
-			className='form'
+			className='form flex items-center justify-center mb-5 sm:mb-4'
 			onSubmit={(event) => {
 				event.preventDefault();
 				onAdd({
@@ -34,7 +34,7 @@ function InputArea({ onAdd }) {
 				value={inputText}
 				required
 			/>
-			<button>
+			<button className='flex items-center justify-center'>
 				<span>Add</span>
 			</button>
 		</form>
